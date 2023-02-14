@@ -1,0 +1,47 @@
+Repetimos o mesmo codigo da aula 8.
+
+Com exceção de que alteramos o arquivo texto, para arquivo comments.jsx.
+
+Códigos Comments.jsx:
+
+function Comments(){
+    return(
+        <section className="comment">
+            <p className='title'>Título</p>
+            <p className='text'>Texto do comentário:</p>
+            <p className='author'>Autor: Mickael Fernandes</p>
+        </section>
+    )
+}
+
+export default Comments;
+
+Códigos Comments.css:
+
+.comment{
+    min-width: 500px;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.title{
+    font-size: 1.5em;
+    color:rgb(36, 36, 84);
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 1em;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.author{
+    text-align: right;
+    font-size: .8em;
+    color: #000;
+}

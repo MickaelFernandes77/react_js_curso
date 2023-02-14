@@ -1,0 +1,47 @@
+Props em React:
+
+Para usar o props, você deve passar essa propriedade dentro do parametro de uma função. (obs: props pode receber qualquer nome)
+
+Para usar o props, basta passar o nome do parametro e seu atributo, dentro das chaves.
+
+Exemplo:
+
+                Passando o props:
+function Comments(props){
+    return(
+        <section className="comment">
+                                //uso do Props
+            <p className='title'>{props.title}</p>
+            <p className='text'>Texto do comentário:</p>
+            <p className='author'>Autor: Mickael Fernandes</p>
+        </section>
+    )
+}
+
+Só que para o uso do exemplo acima funcionar. O atributo que será usado como props, deve estar associado a um elemento, no qual setara o valor do que será exibido através da props.
+
+Exemplo:
+
+function App(){
+    return(
+        <div>
+            <h1>Comentários</h1>
+                    //Uso do props title  
+            <Comments title="Titulo Um"></Comments>
+            <Comments title="Titulo Dois"></Comments>
+        </div>
+    )
+}
+
+Outro Exemplo:
+
+function App(){
+    return(
+        <div>
+            <h1>Comentários</h1>
+            <Comments title="Titulo Um" text="Texto um" author='Mickael Fernandes'></Comments>
+            <Comments title="Titulo Dois" text="Texto dois" author="Fernando Fernandes"></Comments>
+            <Comments title="Titulo Três" text="Texto três" author="Maria Mariana"></Comments>
+        </div>
+    )
+}

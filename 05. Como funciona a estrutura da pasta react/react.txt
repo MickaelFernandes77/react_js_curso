@@ -1,0 +1,37 @@
+Como funciona a estrutura da pasta React:
+
+Na pasta react, temos tudo o que é necessário para criar uma 
+
+Dentro da pasta temos: 3 pastas, e 4 arquivos.
+
+Pastas:
+node_modules: contém tudo o que o react necessita para criar as alpicações.
+
+public: a pasta public contem: 
+um favicon,
+um index.html(nessa pasta temos uma div com o id root, e é nessa div que toda a alicação react sera executada),
+2 logos,  
+manifest.json(um objeto que contem infomrações sobre a nossa aplicação)
+robots.txt (é usado nos mecanismos de busca)
+
+src: A pasta source é onde iremos trabalhar.
+
+a pasta src contem: 
+App.css
+App.json
+App.test.js
+index.css
+index.js
+logo.svg
+reportWebVitals.js
+setupTests.js
+
+Mas geralmente apagamos todos esses arquivos de src, e deixando a pasta vazia.
+Para usar a pasta como quisermos.
+
+Arquivos:
+.gitignore: diz que pro git, o que não queremos que seja colocado no nosso repositório.
+package-lock.json: Contem as informações completas sobre todos os pacotes, que estão incluidos no node_modules. 
+package.json: contem uma descrição doc onjunto de dependencias da nossa aplicação
+E nós podemos enviar isso a outro porogramador, e ele recostroi a pasta node_modules do lado dele.
+README.md

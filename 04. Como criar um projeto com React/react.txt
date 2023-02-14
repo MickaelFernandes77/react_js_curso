@@ -1,0 +1,10 @@
+Como criar um projeto com React
+
+Para criar uma aplicação react:
+No terminal: npx create-react-app nome-app
+
+Após realizar esse comando, uma pasta será adicionada automaticamente com os devidos arquivos do ReactJS.
+
+Após instalar tudo, entrar na pasta que foi criada, e usar o npm start no cmd. Para iniciar um ambiente de desenvolvimento.
+
+É necessário que o git bash esteja sempre aberto, para executar os processos do reactJS.

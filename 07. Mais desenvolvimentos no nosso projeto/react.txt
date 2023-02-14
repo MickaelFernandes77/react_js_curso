@@ -1,0 +1,5 @@
+Mais desenvolvimentos no nosso App:
+
+Criamos um arquivo index.css e o importamos para nosso index.js
+import "./index.css"
+

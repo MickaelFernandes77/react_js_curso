@@ -1,0 +1,7 @@
+O que são os react components:
+
+O React possui react components.
+
+Esses components são como as tags, e dentro desses compontents podemos adicionar outros components.
+
+Por exemplo: Temos um header, no React esse header seria um component, e o conteudo que vem internamente nesse header, também são components. 

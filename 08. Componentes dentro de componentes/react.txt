@@ -1,0 +1,39 @@
+Códigos da aula index.js:
+
+import ReactDOM from "react-dom/client";
+import App from './App';
+
+const root = document.querySelector('#root');
+
+// render: renderiza o que passarmos dentro dos parenteses na tela.
+ReactDOM.createRoot(root).render(<App></App>);
+
+Códigos App.js:
+import Texto from './components/Texto'
+
+function App(){
+    return(
+        <div>
+            <h1>Olá Mundo</h1>
+            <Texto></Texto>
+        </div>
+    )
+}
+
+export default App;
+
+Depois criamos uma pasta chamada components, para armazenar os dados dos components, e criamos um arquivo chamado Texto.jsx
+
+Códigos Texto.jsx:
+
+import React from 'react';
+
+function Texto(){
+    return(
+        <div>
+            <h3>Texto que diz alguma coisa.</h3>
+        </div>
+    )
+}
+
+export default Texto;

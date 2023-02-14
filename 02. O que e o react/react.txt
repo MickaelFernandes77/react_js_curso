@@ -1,0 +1,18 @@
+O que é o react:
+
+React é uma biblioteca baseada em JS.
+
+Uma biblioteca focada em Front-End. Que é focada em construir interfaces de usuários.
+
+O React permite uma experiência de usuário mais reativa e instantânea. E também consegue carregar pedaços da página, sem precisar recarregar a pagina inteira.
+
+Como funciona o ReactJS:
+
+- O JS funciona do lado do client(Browser)
+
+- O JS manipula o DOM(Document Object Model)
+
+- E o React atualiza, partes da página, sem recarregar ela inteira.
+
+- Assim como o JS, o react funciona do lado do cliente, e permite a construção moderna de interfaces de usuários. 
+

@@ -1,0 +1,3 @@
+Repetimos as mesmas etapas, de criação de projeto, das aulas anteriores para fixar o conteúdo.
+
+Detalhe, ao criar arquivos e funções, como boa prática, é necessário passar os nomes em camelCase(funcaoUm).

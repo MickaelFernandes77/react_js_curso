@@ -1,0 +1,33 @@
+Primeiro exercicio de React:
+
+Ao termos a pasta React criada, apagamos tudo da pasta src. E depois criamos um arquivo index.js, para a compilaçao ter sucesso, no git bash.
+
+E importamos 2 arquivos
+React: Importa a biblioteca react.
+import React from "react";
+
+ReactDom: é responsável por fazer a renderização da aplicação. Renderizamos o conteudo principal da nossa aplicação.
+import ReactDOM from "react-dom";
+
+Após os imports, no arquivo index.js usamos o atributo reactDom, para escrever algo na nossa pagina, e selecionamos a pagina, pelo id root da div que está localizada na pasta public.
+
+ReactDOM.render('Olá Mundo!', document.querySelector("#root"))
+
+Após fazermos os imports e usarmos o ReactDOM, abrimos um arquivo chamado App.js, importamos o react, e criamos uma componentFunction.
+
+componentFunction do exemplo:
+
+function App() {
+  return (
+    <div>
+      <h1>Olá, React!</h1>
+    </div>
+  );
+}
+Essa component function retorna uma div com um h1 escrito olá react.
+
+Depois, exportamos a função usando: export default App;
+
+Depois da exportação, no arquivo index.js, passamos o componente App, que criamos como parametro da função do ReactDOM.
+ReactDOM.render('Olá Mundo!', document.querySelector("#root"))
+

@@ -1,0 +1,31 @@
+Criamos dois componentes na pasta components.
+
+Um componente criamos com forma normal, e o outro criamos com uma arrow function 
+
+import React from 'react';
+
+Component 1:
+function ComponenteUm(props){
+    return (
+        <div className='component'>
+            <p>Título: {props.titulo}</p>
+            <p>Componente mais simples de react.</p>
+        </div>
+    )
+}
+
+export default ComponenteUm;
+
+Component 2:
+import React from 'react'
+
+const ComponenteDois =  (props) => {
+    return (
+        <div className="component">
+            <p>Título: {props.titulo}</p>
+        </div>
+
+    )
+}
+
+export default ComponenteDois;
