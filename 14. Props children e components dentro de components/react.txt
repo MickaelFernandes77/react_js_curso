@@ -1,0 +1,31 @@
+Para usar um component dentro de outro component, é necesário importar o component que será utilizado para o component Pai.
+
+Cód Component 3:
+import React from 'react';
+import ComponenteQuatro from './ComponenteQuatro';
+
+function ComponenteTres(props){
+    return(
+        <div className='component'>
+            <p>Título: {props.titulo}</p>
+            <ComponenteQuatro texto="Texto 1 Comp 5"></ComponenteQuatro>
+            <ComponenteQuatro texto="Texto 2 Comp 5"></ComponenteQuatro>
+            <ComponenteQuatro texto="Texto 3 Comp 5"></ComponenteQuatro>
+        </div>
+    )
+}
+
+export default ComponenteTres;
+
+Cód Component 4:
+import React from 'react';
+
+const ComponenteQuatro = (props) =>{
+    return(
+        <p>{props.texto}</p>
+    )
+}
+
+export default ComponenteQuatro;
+
+Estamos usando o componentQuatro no ComponentTres.

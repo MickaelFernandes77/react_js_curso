@@ -1,0 +1,57 @@
+Criamos uma pasta chamada dados_clientes. Para aprendermos a lidar com dados vindos de um array de objetos.
+
+Dentro dessa pasta criamos um arquivo chamado dados_cliente.js.
+
+Cód dados_clientes:
+const dados_clientes = [
+    {id_cliente: 1, nome: 'João', email: 'joao@gmail.com'},
+    {id_cliente: 2, nome: 'Maria', email: 'maria@gmail.com'},
+    {id_cliente: 3, nome: 'Fernando', email: 'fernando@gmail.com'},
+    {id_cliente: 4, nome: 'Ana', email: 'ana@gmail.com'}
+];
+
+export default dados_clientes;
+
+Depois importamos o arquivo dados clientes para o nosso novo arquivo ComponenteCinco. Para usarmos os dados dos clientes.
+
+Cód ComponenteCinco:
+
+import React from "react";
+import clientes from '../dados_clientes/dados_clientes';
+
+const ComponenteCinco = (props) => {
+
+    function cliente(){
+        return clientes.map(cliente => {
+            return <li key={cliente.id_cliente}>Nome: {cliente.nome} | Email: {cliente.email}</li>
+        })
+    }
+
+    return (
+        <div className="component">
+            <p className='title'>
+                Titulo: {props.titulo}
+            </p>
+
+            <ul>
+                {cliente()}
+            </ul>
+        </div>
+    )
+}
+
+export default ComponenteCinco;
+
+No código acima, fizemos o uso dos dados do arquivo dados_clientes, e retornamos eles através de uma função cliente, usando o método
+de array MAP, para retornar os dados de cada um dos indices do array de objetos.
+
+Observação: No React não conseguimos usar estruturas de repetição. Por exemplo o for. Pois não conseguimos exportar os dados 
+que essa estrutura de repetição gera. Por isso usamos o método map, que é como se fosse um foreach em cada item de uma lista de objetos.
+E após usar o map, é necessário fazer o return dos dados que o map vai ferar, se não os dados gerados não irão aparecer na tela.
+
+Uso: function cliente(){
+                            Esse nome cliente, pode ser qualquer um.
+        return clientes.map(cliente => {
+            return <li key={cliente.id_cliente}>Nome: {cliente.nome} | Email: {cliente.email}</li>
+        })
+    }

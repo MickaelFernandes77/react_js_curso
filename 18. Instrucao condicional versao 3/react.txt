@@ -1,0 +1,42 @@
+Aprendemos a fazer um if usando componente.
+
+Primeiro criamos um arquivo chamado ComponenteOito:
+
+Cód ComponenteOito:
+
+import React from 'react';
+import CondicaoIf from './CondicaoIf';
+
+export default function(props){
+    return (    
+        <div className="component">
+            <p className='title'>Título: {props.titulo}</p>
+
+            <CondicaoIf condicao={true}>
+                <p>Verdadeiro</p>
+            </CondicaoIf>
+        </div>
+    )
+}
+
+Posteriormente criamos um arquivo chamado CondicaoIf, onde na estrutura de codigo temos o a condicao que será usada.
+
+Cód CondicaoIf:
+export default function(props){
+    if(props.condicao){
+        <p>Verdadeiro, {props.valor} é o meu nome</p>
+    }else{
+        return false
+    }
+}
+
+Depois fizemos as devidas importações para o arquivo app.js.
+
+O que fizemos no codigo do ComponenteOito: Importamos o CondicaoIf para o ComponenteOito, e usamos o componente 
+CondicaoIf no ComponenteOito. Componentes dentro de Componentes. Passamos o props condicao e setamos o valor de true para 
+aparecer o valor do que foi setado no uso do ComponenteOito no app.js.
+
+Para usar o valor que será testado na condição, precisamos definir o valor no app.js ao usar o componente que tem o if,
+da mesma forma que definimos um titulo para nossos componentes. Da mesma forma que usamos nos exemplos anteriores.
+
+Também podemos usar o Switch, da mesma forma que usamos em JS puro.

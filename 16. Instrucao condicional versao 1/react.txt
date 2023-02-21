@@ -1,0 +1,21 @@
+Aprendemos a fazer um if ternário usando react.
+
+Primeiro criamos um arquivo chamado ComponenteSeis:
+import React from 'react';
+
+export default function(props){
+    return (
+        <div className="component">
+            <p className='title'>Título: {props.titulo}</p>
+            {props.valor == true ? <p>Verdadeiro</p> : <p>Falso</p>}
+        </div>
+    )
+}
+
+Depois fizemos as devidas importações para o arquivo app.js.
+
+Para fazer um if ternário no react basta faze-lo da seguinte maneira:
+{props.valor == true ? <p>Verdadeiro</p> : <p>Falso</p>}
+
+Para usar o valor que será testado na condição, precisamos definir o valor no app.js ao usar o componente que tem o if,
+da mesma forma que definimos um titulo para nossos componentes.

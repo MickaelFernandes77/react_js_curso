@@ -1,0 +1,39 @@
+Aprendemos a fazer um if padrão usando react.
+
+Primeiro criamos um arquivo chamado ComponenteSete:
+import React from 'react';
+
+import React from 'react';
+
+export default function(props){
+    function condicao(){
+        if(props.valor >= 10){
+            return <p>O valor é igual ou maior do que 10.</p>
+        }else{
+            return <p>O valor é menor do que 10.</p>    
+        }
+    }
+
+    return (    
+        <div className="component">
+            <p className='title'>Título: {props.titulo}</p>
+            {condicao()}
+        </div>
+    )
+}
+
+Depois fizemos as devidas importações para o arquivo app.js.
+
+Para fazer um if no react basta faze-lo da seguinte maneira, é só usar da mesma forma que usamos no JS puro:
+function condicao(){
+        if(props.valor >= 10){
+            return <p>O valor é igual ou maior do que 10.</p>
+        }else{
+            return <p>O valor é menor do que 10.</p>    
+        }
+    }
+
+Para usar o valor que será testado na condição, precisamos definir o valor no app.js ao usar o componente que tem o if,
+da mesma forma que definimos um titulo para nossos componentes.
+
+Também podemos usar o Switch, da mesma forma que usamos em JS puro.
